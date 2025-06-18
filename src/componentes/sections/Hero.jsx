@@ -21,7 +21,7 @@ const Hero = () => {
             <h2 className="text-xl md:text-2xl text-gray-300 mb-6 animate-slide-in-left animation-delay-200">
               {personalInfo.title}
             </h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-lg ml-14 md:ml-0 animate-slide-in-left animation-delay-400">
+            <p className="text-lg text-gray-400 mb-8 max-w-lg md:ml-0 animate-slide-in-left animation-delay-400">
               {personalInfo.description}
             </p>
 
@@ -40,7 +40,7 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 pl-40 animate-slide-in-left animation-delay-600 md:pl-0">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-slide-in-left animation-delay-600 md:pl-0">
               <Button href="#proyectos" variant="primary">
                 Ver Proyectos
               </Button>
@@ -50,7 +50,7 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center md:justify-end animate-slide-in-right animation-delay-300">
+          <div className="flex justify-center md:justify-end animate-slide-in-right animation-delay-300 md:pr-15 ">
             <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-700 rounded-full flex items-center justify-center animate-float relative overflow-hidden">
               <span className="text-4xl z-10 relative">👨‍💻</span>
             </div>
