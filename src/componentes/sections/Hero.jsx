@@ -6,6 +6,19 @@ import yo2 from "../../assets/yo2.jpg";
 import yo3 from "../../assets/yo3.jpg";
 
 const Hero = () => {
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeMenu();
+  };
+
   return (
     <section
       id="inicio"
@@ -37,11 +50,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-slide-in-left animation-delay-600 md:pl-0">
-              <Button href="#proyectos" variant="primary">
+              <Button href="#proyectos" variant="primary" onClick={(e) => {
+            e.preventDefault();
+            scrollToSection('proyectos');
+          }}>
                 Ver Proyectos
               </Button>
 
-              <Button href="#contacto" variant="outline">
+              <Button href="#contacto" variant="outline" onClick={(e) => {
+            e.preventDefault();
+            scrollToSection('contacto');
+          }}>
                 Contactar
               </Button>
             </div>
