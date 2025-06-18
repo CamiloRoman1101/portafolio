@@ -29,7 +29,7 @@ const SkillCard = ({ skill }) => {
     <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-lg p-4 hover:border-cyan-400/50 transition-all duration-300 hover: transform hover:scale-105 ">
       <div className="flex flex-col gap-3 mb-3">
         <span className="text-2xl text-white">{React.createElement(skill.icon)}</span>
-        <h4 className="text-white font-medium text-lg"></h4>
+        <h4 className="text-white font-medium text-lg">{skill.name}</h4>
       </div>
 
       <div className="flex items-center justify-between mb-2">

@@ -1,7 +1,9 @@
 import { FaGithub } from "react-icons/fa";
 import { personalInfo } from "../../data/personal";
 import Button from "../ui/Button";
-import { CiLinkedin } from "react-icons/ci";
+import yo1 from "../../assets/yo.jpg";
+import yo2 from "../../assets/yo2.jpg";
+import yo3 from "../../assets/yo3.jpg";
 
 const Hero = () => {
   return (
@@ -32,12 +34,6 @@ const Hero = () => {
               >
                 <FaGithub />
               </a>
-              <a
-                href={personalInfo.linkedin}
-                className="text-gray-400 hover:text-cyan-400 transition-colors text-2xl"
-              >
-                <CiLinkedin />
-              </a>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-slide-in-left animation-delay-600 md:pl-0">
@@ -52,7 +48,8 @@ const Hero = () => {
           </div>
           <div className="flex justify-center md:justify-end animate-slide-in-right animation-delay-300 md:pr-15 ">
             <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-700 rounded-full flex items-center justify-center animate-float relative overflow-hidden">
-              <span className="text-4xl z-10 relative">👨‍💻</span>
+              {/* <span className="text-4xl z-10 relative">👨‍💻</span> */}
+              <img src={yo3} alt="Foto de perfil" />
             </div>
           </div>
         </div>
